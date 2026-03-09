@@ -22,8 +22,8 @@ def selctor(user_inputs: List[str]) -> str:
 
 def main():
     user_list: List[str] = input_list()
-    print(user_list)
-    print(selctor(user_list))
+    print("Your list:", user_list)
+    print("Selected option",selctor(user_list))
 
 if __name__ == '__main__':
     main()
