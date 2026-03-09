@@ -1,4 +1,5 @@
 from typing import List
+import random
 
 # reads the input and returns a list
 def input_list() -> List[str]:
@@ -14,9 +15,15 @@ def input_list() -> List[str]:
 
     return user_list
 
+#selectes a random one
+def selctor(user_inputs: List[str]) -> str:
+    index: int = random.randint(0, len(user_inputs) - 1)
+    return user_inputs[index]
+
 def main():
     user_list: List[str] = input_list()
     print(user_list)
+    print(selctor(user_list))
 
 if __name__ == '__main__':
     main()
