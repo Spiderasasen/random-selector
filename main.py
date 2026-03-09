@@ -2,7 +2,6 @@ from typing import List
 
 # reads the input and returns a list
 def input_list() -> List[str]:
-    string: str = ""
     user_list: List[str] = []
 
     while True:
